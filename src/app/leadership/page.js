@@ -51,13 +51,13 @@ const officers = [
 		id: 11,
 		name: "Lauro Cantu",
 		position: "Project Director",
-		image: "missing.webp",
+		image: "lauro.jpg",
 	},
 	{
 		id: 9,
 		name: "Itzel Aldaco",
 		position: "Creative Director",
-		image: "missing.webp",
+		image: "itzel.jpg",
 	},
 	{
 		id: 10,
