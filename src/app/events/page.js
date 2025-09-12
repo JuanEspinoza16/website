@@ -87,12 +87,9 @@ export default async function Events() {
       };
     });
     // separate events and sort them
-    past = events.filter((item) =>
-      item.when ? item.when < Date.now() : false
-    );
-    future = events.filter((item) =>
-      item.when ? item.when >= Date.now() : true
-    );
+    let current = new Date(Date.now() - 6 * 60 * 60 * 1000); // make sure its in Central Time zone
+    past = events.filter((item) => (item.when ? item.when < current : false));
+    future = events.filter((item) => (item.when ? item.when >= current : true));
     past.sort((a, b) => a.when - b.when);
     future.sort((a, b) => a.when - b.when);
   } catch {
