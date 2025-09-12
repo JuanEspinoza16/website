@@ -56,7 +56,7 @@ export default function Membership() {
             <p className="font-bold">Requirements</p>
             <ul className="list list-disc">
               <li>All Majors welcome</li>
-              <li>Fee: $5 / semester</li>
+              <li>Fee: $10 / semester</li>
             </ul>
           </div>
         </div>
